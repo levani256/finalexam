@@ -1,0 +1,222 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+}
+
+p {
+    margin-bottom: 25px; 
+    line-height: 1.8;
+    font-size: 16px; 
+}
+
+section {
+    padding: 40px 20px; 
+    margin-bottom: 40px;
+    background-color: #222; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+a {
+    text-decoration: none;
+    color: #ff6600;
+    transition: color 0.3s ease;
+    margin-bottom: 15px; 
+}
+
+a:hover {
+    color: #ff3300;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #ff3300;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 20px; 
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6600; 
+}
+
+.burger-menu {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px; 
+}
+
+.burger-menu:hover {
+    transform: none;
+}
+
+.modal-content {
+    background-color: #222;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 20px auto;
+}
+
+#register-modal h2 {
+    margin-bottom: 20px; 
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #333;
+    color: white;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px solid #ff6600;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+}
+
+.cookie-popup button {
+    background: #ff6600;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cookie-popup button:hover {
+    background: #ff3300;
+}
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 50%;
+    z-index: 1000; 
+}
+
+#scrollToTop:hover {
+    background: #ff3300;
+}
+
+@media (max-width: 1024px) {
+    #scrollToTop {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.burger-categories {
+    display: none; 
+    list-style: none;
+    position: absolute;
+    top: 60px; 
+    right: 10px; 
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.burger-categories li {
+    padding: 10px;
+    text-align: center;
+}
+
+.burger-categories a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+}
+
+.burger-categories a:hover {
+    background-color: #ff6600;
+}
+
+.burger-menu.active + .burger-categories {
+    display: block;
+}
+
+.sekiro {
+    width: 25%;
+    height: auto;
+    max-width: 100%; 
+    display: block; 
+    margin: 0 auto; 
+}

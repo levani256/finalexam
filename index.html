@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gaming Zone</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger-menu">☰</div>
+            <ul class="burger-categories">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Indie</a></li>
+                <li><a href="#">Puzzle</a></li>
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">Shooter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <img src="download.jpg" alt="Sekiro" class="sekiro"/>
+
+    <section class="hero">
+        <h1>Welcome to the Ultimate Gaming Experience</h1>
+        <p>Discover the best games, news, and events.</p>
+        <button id="open-register-modal" class="register-button">Register Now</button>
+    </section>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h2>Register</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" id="show-hide-password">Show</button>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <p id="form-status"></p>
+        </div>
+    </div>
+
+    <button id="scrollToTop">⬆</button>
+
+    <div id="cookie-notification" class="cookie-popup">
+        This site uses cookies. <button id="accept-cookies">Accept</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gaming Zone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
